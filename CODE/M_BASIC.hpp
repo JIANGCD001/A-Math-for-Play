@@ -17,31 +17,31 @@ Software Licence, Version 1.0
 #   endif
 
 template<typename T>
-bool BIGGER(const T a,const T b)
+inline bool BIGGER(const T a,const T b)
 {
     return a>b;
 }
 
 template<typename T>
-bool SMALLER(const T a,const T b)
+inline bool SMALLER(const T a,const T b)
 {
     return a<b;
 }
 
 template<typename T>
-T MAX(const T a,const T b)
+inline T MAX(const T a,const T b)
 {
     return a>b?a:b;
 }
 
 template<typename T>
-T MIN(const T a,const T b)
+inline T MIN(const T a,const T b)
 {
     return a<b?a:b;
 }
 
 template<typename T>
-T SUM(const T* param,size_t size,T zero)
+inline T SUM(const T* param,size_t size,T zero)
 {
     T ans=zero;
     for (size_t i=0;i<size;i++)
@@ -52,7 +52,7 @@ T SUM(const T* param,size_t size,T zero)
 }
 
 template<typename T>
-T PROD(const T* param,size_t size,T unit)
+inline T PROD(const T* param,size_t size,T unit)
 {
     T ans=unit;
     for (size_t i=0;i<size;i++)
@@ -63,7 +63,7 @@ T PROD(const T* param,size_t size,T unit)
 }
 
 template<typename T>
-T POWER(const T base,int power,T unit)
+inline T POWER(const T base,int power,T unit)
 {
     T ans=unit;
     T a=base;
@@ -80,7 +80,7 @@ T POWER(const T base,int power,T unit)
 }
 
 template<typename T>
-T MODPOWER(const T base,int power,T unit,T mod)
+inline T MODPOWER(const T base,int power,T unit,T mod)
 {
     T ans=unit;
     T a=base;
@@ -97,13 +97,13 @@ T MODPOWER(const T base,int power,T unit,T mod)
 }
 
 template<typename T>
-T ABS(T item)
+inline T ABS(T item)
 {
     return ABSOLUTE(item);
 }
 
 template<typename T>
-T SGN(T item,T zero,T unit)
+inline T SGN(T item,T zero,T unit)
 {
     if (item==zero)
     {
