@@ -1,6 +1,6 @@
 /*
 Copyright (C) Jiang Chenduan 2025-2050
-Software Licence, Version 1.0
+MIT Licence
 */
 
 #pragma once
